@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './question.dart';
+
 void main() => runApp(AlphaApp());
 
 class AlphaApp extends StatefulWidget {
@@ -31,7 +33,7 @@ class _AlphaAppState extends State<AlphaApp> {
         ),
         body: Column(
           children: <Widget>[
-            Text(
+            Question(
               questions.elementAt(_questionIndex)
               ),
             ElevatedButton(
