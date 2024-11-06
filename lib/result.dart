@@ -11,13 +11,13 @@ class Result extends StatelessWidget {
     if (resultScore <= 15) {
       resultText =
           "😊 You're sweet and calm! \nPeople feel relaxed around you.";
-    } else if (resultScore <= 25) {
+    } else if (resultScore <= 22) {
       resultText =
           "😋 You're friendly and easygoing! \nPeople like being around you.";
-    } else if (resultScore <= 32) {
+    } else if (resultScore <= 30) {
       resultText =
           "😎 You're fun and a little adventurous! \nYou bring excitement.";
-    } else if (resultScore <= 38) {
+    } else if (resultScore <= 36) {
       resultText = "🔥 You're bold and unique! \nPeople always remember you.";
     } else {
       resultText =

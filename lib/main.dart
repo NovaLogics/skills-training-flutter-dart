@@ -85,7 +85,7 @@ class _AlphaAppState extends State<AlphaApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Flutter Alpha App"),
+          title: const Text("Discover Your Vibe"),
         ),
         body: _questionIndex < _questions.length
             ? Quiz(
