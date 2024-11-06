@@ -15,6 +15,7 @@ class AlphaApp extends StatefulWidget {
 
 class _AlphaAppState extends State<AlphaApp> {
   var _questionIndex = 0;
+  var _totalScore = 0;
 
   final _questions = const [
     {
@@ -46,7 +47,9 @@ class _AlphaAppState extends State<AlphaApp> {
     },
   ];
 
-  void _answerQuestion() {
+  void _answerQuestion(int score) {
+    _totalScore += score;
+
     setState(() {
       _questionIndex++;
     });
@@ -65,7 +68,7 @@ class _AlphaAppState extends State<AlphaApp> {
                 questionIndex: _questionIndex,
                 questions: _questions,
               )
-            : Result(),
+            : Result(_totalScore),
       ),
     );
   }
