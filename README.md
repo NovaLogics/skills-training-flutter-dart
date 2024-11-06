@@ -19,7 +19,9 @@ samples, guidance on mobile development, and a full API reference.
 
 <div align="center">
 
-<img src="./_assets/screenshots/screen_home_demo.jpg" width="320" height="720" />
+<img src="./_assets/screenshots/screen_home_demo_1.jpg" width="230" height="520" />
+<img src="./_assets/screenshots/screen_home_demo_2.jpg" width="230" height="520" />
+<img src="./_assets/screenshots/screen_home_demo_3.jpg" width="230" height="520" />
 <br>
 
 </div>
