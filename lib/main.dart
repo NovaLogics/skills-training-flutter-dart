@@ -19,32 +19,50 @@ class _AlphaAppState extends State<AlphaApp> {
 
   final _questions = const [
     {
-      "questionText": "What's your favorite colour?",
+      "questionText": "How do you prefer to spend your free time?",
       "answers": [
-        {"text": "Black", "score": 10},
-        {"text": "Red", "score": 7},
-        {"text": "Green", "score": 3},
-        {"text": "White", "score": 1},
+        {"text": "Reading a book", "score": 3},
+        {"text": "Going on an adventure", "score": 8},
+        {"text": "Relaxing at home", "score": 5},
+        {"text": "Meeting friends", "score": 7}
       ]
     },
     {
-      "questionText": "What's your favorite Animal?",
+      "questionText": "Which weather do you enjoy the most?",
       "answers": [
-        {"text": "Rabbit", "score": 3},
-        {"text": "Cat", "score": 4},
-        {"text": "Dog", "score": 5},
-        {"text": "Lion", "score": 9},
+        {"text": "Sunny", "score": 6},
+        {"text": "Rainy", "score": 4},
+        {"text": "Snowy", "score": 8},
+        {"text": "Windy", "score": 5}
       ]
     },
     {
-      "questionText": "What's your favorite Engineer?",
+      "questionText": "What kind of movies do you prefer?",
       "answers": [
-        {"text": "Nova", "score": 2},
-        {"text": "Nova", "score": 2},
-        {"text": "Nova", "score": 2},
-        {"text": "Nova", "score": 2},
+        {"text": "Action", "score": 7},
+        {"text": "Comedy", "score": 4},
+        {"text": "Drama", "score": 5},
+        {"text": "Science Fiction", "score": 9}
       ]
     },
+    {
+      "questionText": "Which quality do you value the most in others?",
+      "answers": [
+        {"text": "Honesty", "score": 3},
+        {"text": "Bravery", "score": 9},
+        {"text": "Kindness", "score": 5},
+        {"text": "Intelligence", "score": 7}
+      ]
+    },
+    {
+      "questionText": "What is your ideal vacation spot?",
+      "answers": [
+        {"text": "Beach", "score": 5},
+        {"text": "Mountains", "score": 7},
+        {"text": "City", "score": 6},
+        {"text": "Countryside", "score": 3}
+      ]
+    }
   ];
 
   void _answerQuestion(int score) {
