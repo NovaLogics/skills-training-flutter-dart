@@ -6,7 +6,11 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(AlphaApp());
 
-class AlphaApp extends StatelessWidget {
+class AlphaApp extends StatefulWidget {
+
+}
+
+class _AlphaAppState extends State {
   var questionIndex = 0;
 
   void answerQuestion() {
