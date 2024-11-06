@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_alpha/quiz.dart';
 
-import './question.dart';
-import './answer.dart';
 import './quiz.dart';
+import './result.dart';
 
 void main() => runApp(AlphaApp());
 
@@ -20,15 +19,30 @@ class _AlphaAppState extends State<AlphaApp> {
   final _questions = const [
     {
       "questionText": "What's your favorite colour?",
-      "answers": ["Black", "Red", "Green", "White"]
+      "answers": [
+        {"text": "Black", "score": 10},
+        {"text": "Red", "score": 7},
+        {"text": "Green", "score": 3},
+        {"text": "White", "score": 1},
+      ]
     },
     {
       "questionText": "What's your favorite Animal?",
-      "answers": ["Rabbit", "Cat", "Dog", "Lion"]
+      "answers": [
+        {"text": "Rabbit", "score": 3},
+        {"text": "Cat", "score": 4},
+        {"text": "Dog", "score": 5},
+        {"text": "Lion", "score": 9},
+      ]
     },
     {
       "questionText": "What's your favorite Engineer?",
-      "answers": ["Nova", "Nova", "Nova", "Nova"]
+      "answers": [
+        {"text": "Nova", "score": 2},
+        {"text": "Nova", "score": 2},
+        {"text": "Nova", "score": 2},
+        {"text": "Nova", "score": 2},
+      ]
     },
   ];
 
@@ -51,9 +65,7 @@ class _AlphaAppState extends State<AlphaApp> {
                 questionIndex: _questionIndex,
                 questions: _questions,
               )
-            : const Center(
-                child: Text("You did it!"),
-              ),
+            : Result(),
       ),
     );
   }
