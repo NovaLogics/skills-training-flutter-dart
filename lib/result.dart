@@ -9,21 +9,19 @@ class Result extends StatelessWidget {
   String get resultPhrase {
     String resultText;
     if (resultScore <= 8) {
-      resultText = "😊 You're sweet and calm! \nPeople feel relaxed around you.";
-    } 
-    else if (resultScore <= 12) {
+      resultText =
+          "😊 You're sweet and calm! \nPeople feel relaxed around you.";
+    } else if (resultScore <= 12) {
       resultText =
           "👍 You're friendly and easygoing! \nPeople like being around you.";
-    } 
-    else if (resultScore <= 16) {
+    } else if (resultScore <= 16) {
       resultText =
           "😎 You're fun and a little adventurous! \nYou bring excitement.";
-    } 
-    else if (resultScore <= 20) {
+    } else if (resultScore <= 20) {
       resultText = "🔥 You're bold and unique! \nPeople always remember you.";
-    } 
-    else {
-      resultText = "🌌 You're one-of-a-kind! \nMysterious and super interesting.";
+    } else {
+      resultText =
+          "🌌 You're one-of-a-kind! \nMysterious and super interesting.";
     }
     return resultText;
   }
@@ -33,25 +31,36 @@ class Result extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          Text(
-            resultPhrase,
-            style: const TextStyle(
-              fontSize: 32,
-              fontWeight: FontWeight.bold,
+          Container(
+            width: double.infinity,
+            margin: const EdgeInsets.fromLTRB(16.0, 48.0, 16.0, 16.0),
+            padding: const EdgeInsets.all(2.0),
+            child: Text(
+              resultPhrase,
+              style: const TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
             ),
-            textAlign: TextAlign.center,
           ),
-          TextButton(
-            onPressed: resetHandler,
-            child: const Text("Restart Quiz"),
-            style: TextButton.styleFrom(
-              backgroundColor: Colors.teal,
-              primary: Colors.black,
-              textStyle: const TextStyle(
-                color: Colors.black,
+          Container(
+            width: double.infinity,
+            margin: const EdgeInsets.all(24.0),
+            child: TextButton(
+              onPressed: resetHandler,
+              child: const Text("Restart Quiz"),
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.cyan[500],
+                primary: Colors.black,
+                padding: const EdgeInsets.all(12.0),
+                textStyle: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16.0,
+                ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
