@@ -13,7 +13,7 @@ class Result extends StatelessWidget {
           "😊 You're sweet and calm! \nPeople feel relaxed around you.";
     } else if (resultScore <= 25) {
       resultText =
-          "👍 You're friendly and easygoing! \nPeople like being around you.";
+          "😋 You're friendly and easygoing! \nPeople like being around you.";
     } else if (resultScore <= 32) {
       resultText =
           "😎 You're fun and a little adventurous! \nYou bring excitement.";
@@ -21,7 +21,7 @@ class Result extends StatelessWidget {
       resultText = "🔥 You're bold and unique! \nPeople always remember you.";
     } else {
       resultText =
-          "🌌 You're one-of-a-kind! \nMysterious and super interesting.";
+          "🌌 You're one of a kind! \nMysterious and super interesting.";
     }
     return resultText;
   }
