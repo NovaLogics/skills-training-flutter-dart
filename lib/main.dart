@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-// void main() {
-//   runApp(AlphaApp());
-// }
-
 void main() => runApp(AlphaApp());
 
 class AlphaApp extends StatefulWidget {
@@ -14,13 +10,12 @@ class AlphaApp extends StatefulWidget {
 }
 
 class _AlphaAppState extends State<AlphaApp> {
-  var questionIndex = 0;
+  var _questionIndex = 0;
 
-  void answerQuestion() {
+  void _answerQuestion() {
     setState(() {
-          questionIndex++;
+          _questionIndex++;
     });
-
   }
 
   @override
@@ -37,23 +32,23 @@ class _AlphaAppState extends State<AlphaApp> {
         body: Column(
           children: <Widget>[
             Text(
-              questions.elementAt(questionIndex)
+              questions.elementAt(_questionIndex)
               ),
             ElevatedButton(
               child: Text("Answer 1"),
-              onPressed: answerQuestion,
+              onPressed: _answerQuestion,
             ),
             ElevatedButton(
               child: Text("Answer 2"),
-              onPressed: answerQuestion,
+              onPressed: _answerQuestion,
             ),
             ElevatedButton(
               child: Text("Answer 3"),
-              onPressed: answerQuestion,
+              onPressed: _answerQuestion,
             ),
             ElevatedButton(
               child: Text("Answer 4"),
-              onPressed: answerQuestion,
+              onPressed: _answerQuestion,
             ),
           ],
         ),
