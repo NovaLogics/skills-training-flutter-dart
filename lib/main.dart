@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
-void main(){
+// void main() {
+//   runApp(AlphaApp());
+// }
 
-}
+void main() => runApp(AlphaApp());
 
 class AlphaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return MaterialApp(
+      home: Text("Hello!"),
+    );
   }
-
 }
