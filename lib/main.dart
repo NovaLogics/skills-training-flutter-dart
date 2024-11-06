@@ -17,7 +17,10 @@ class _AlphaAppState extends State<AlphaApp> {
   var questionIndex = 0;
 
   void answerQuestion() {
-    questionIndex++;
+    setState(() {
+          questionIndex++;
+    });
+
   }
 
   @override
@@ -33,7 +36,9 @@ class _AlphaAppState extends State<AlphaApp> {
         ),
         body: Column(
           children: <Widget>[
-            Text(questions.elementAt(questionIndex)),
+            Text(
+              questions.elementAt(questionIndex)
+              ),
             ElevatedButton(
               child: Text("Answer 1"),
               onPressed: answerQuestion,
