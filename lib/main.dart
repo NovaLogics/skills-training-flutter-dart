@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './question.dart';
+import './answer.dart';
 
 void main() => runApp(AlphaApp());
 
@@ -16,7 +17,7 @@ class _AlphaAppState extends State<AlphaApp> {
 
   void _answerQuestion() {
     setState(() {
-          _questionIndex++;
+      _questionIndex++;
     });
   }
 
@@ -33,25 +34,11 @@ class _AlphaAppState extends State<AlphaApp> {
         ),
         body: Column(
           children: <Widget>[
-            Question(
-              questions.elementAt(_questionIndex)
-              ),
-            ElevatedButton(
-              child: Text("Answer 1"),
-              onPressed: _answerQuestion,
-            ),
-            ElevatedButton(
-              child: Text("Answer 2"),
-              onPressed: _answerQuestion,
-            ),
-            ElevatedButton(
-              child: Text("Answer 3"),
-              onPressed: _answerQuestion,
-            ),
-            ElevatedButton(
-              child: Text("Answer 4"),
-              onPressed: _answerQuestion,
-            ),
+            Question(questions.elementAt(_questionIndex)),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
           ],
         ),
       ),
