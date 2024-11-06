@@ -7,10 +7,13 @@ import 'package:flutter/material.dart';
 void main() => runApp(AlphaApp());
 
 class AlphaApp extends StatefulWidget {
-
+  @override
+  State<StatefulWidget> createState() {
+    return _AlphaAppState();
+  }
 }
 
-class _AlphaAppState extends State {
+class _AlphaAppState extends State<AlphaApp> {
   var questionIndex = 0;
 
   void answerQuestion() {
