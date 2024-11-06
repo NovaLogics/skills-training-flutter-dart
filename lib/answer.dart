@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Answer extends StatelessWidget {
-  final Function selectHandler;
+  final VoidCallback selectHandler;
 
   const Answer(this.selectHandler);
 
@@ -13,7 +13,7 @@ class Answer extends StatelessWidget {
       padding: const EdgeInsets.all(2.0),
       child: ElevatedButton(
         child: Text("Answer 1"),
-        onPressed: null,
+        onPressed: selectHandler,
         style: ElevatedButton.styleFrom(
           primary: Colors.teal,
           onPrimary: Colors.white,
