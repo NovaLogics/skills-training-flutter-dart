@@ -7,6 +7,10 @@ import 'package:flutter/material.dart';
 void main() => runApp(AlphaApp());
 
 class AlphaApp extends StatelessWidget {
+  void answerQuestion() {
+    print("Answer chosen!");
+  }
+
   @override
   Widget build(BuildContext context) {
     var questions = [
@@ -22,20 +26,20 @@ class AlphaApp extends StatelessWidget {
           children: <Widget>[
             Text("Question"),
             ElevatedButton(
-              onPressed: () {},
               child: Text("Answer 1"),
-            ),
-             ElevatedButton(
-              onPressed: () {},
-              child: Text("Answer 2"),
+              onPressed: answerQuestion,
             ),
             ElevatedButton(
-              onPressed: () {},
-              child: Text("Answer 3"),
+             child: Text("Answer 2"),
+              onPressed: answerQuestion,
             ),
             ElevatedButton(
-              onPressed: () {},
-              child: Text("Answer 4"),
+             child: Text("Answer 3"),
+              onPressed: answerQuestion,
+            ),
+            ElevatedButton(
+               child: Text("Answer 4"),
+              onPressed: answerQuestion,
             ),
           ],
         ),
